@@ -1,0 +1,5 @@
+I am a second-year UC Berkeley student diving deep into AI.
+Primary interests: AI agents, multi-agent systems, LLMs, agent frameworks (CrewAI, LangGraph, etc.), practical projects, research opportunities at BAIR/Launchpad, and building a strong AI career portfolio.
+Secondary: efficient training, retrieval-augmented generation, evaluation of agents, open-source tools.
+Ignore pure theory papers with no practical angle unless they are breakthroughs.
+Prefer papers from the last 3–7 days.
