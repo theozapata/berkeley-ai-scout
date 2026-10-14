@@ -1,9 +1,9 @@
 import arxiv
 import requests
 import json
+import os
 from datetime import datetime
 from pathlib import Path
-import re
 
 # ============== CONFIG ==============
 GOALS_FILE = "goals.txt"
@@ -12,6 +12,7 @@ MAX_ARXIV = 35
 MAX_HF = 20
 TOP_N = 5
 ARXIV_CATEGORIES = ["cs.AI", "cs.LG", "cs.CL", "cs.MA"]
+TO_EMAIL = "theojzap@berkeley.edu"
 # ====================================
 
 def load_goals():
@@ -65,17 +66,15 @@ def fetch_hf_daily():
         return []
 
 def score_paper(paper, goals):
-    """Reliable scoring that works without any LLM (perfect for GitHub Actions)"""
     text = (paper["title"] + " " + paper["abstract"]).lower()
     
-    # High-value keywords for your goals
     high = ["agent", "multi-agent", "multi agent", "llm agent", "tool use", "tool-use",
             "planning", "langgraph", "crewai", "autogen", "agentic", "self-improvement",
             "recursive", "memory", "retrieval", "rag", "evaluation of agents"]
     medium = ["language model", "llm", "large language", "reasoning", "tool calling",
               "orchestration", "framework", "benchmark", "open-source"]
     
-    score = 4  # base
+    score = 4
     for word in high:
         if word in text:
             score += 1.5
@@ -85,11 +84,9 @@ def score_paper(paper, goals):
             
     score = min(round(score), 10)
     
-    # Simple but useful summary
     abstract = paper["abstract"]
     summary = abstract[:320].rsplit(" ", 1)[0] + "..." if len(abstract) > 320 else abstract
     
-    # Actionable takeaway
     if score >= 8:
         takeaway = "High priority – strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea."
     elif score >= 6:
@@ -102,6 +99,29 @@ def score_paper(paper, goals):
         "summary": summary,
         "takeaway": takeaway
     }
+
+def send_email(report_md: str, today: str):
+    """Send the report using Resend"""
+    api_key = os.getenv("RESEND_API_KEY")
+    if not api_key:
+        print("No RESEND_API_KEY found – skipping email.")
+        return
+
+    try:
+        import resend
+        resend.api_key = api_key
+
+        params = {
+            "from": "Berkeley AI Scout <onboarding@resend.dev>",
+            "to": [TO_EMAIL],
+            "subject": f"Scout Report — {today}",
+            "html": f"<pre style='font-family: monospace; white-space: pre-wrap;'>{report_md}</pre>"
+        }
+
+        email = resend.Emails.send(params)
+        print(f"✅ Email sent successfully to {TO_EMAIL}")
+    except Exception as e:
+        print(f"❌ Email failed: {e}")
 
 def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
@@ -146,8 +166,9 @@ def main():
         md.append(f"\n### Recommended Action\n{p['takeaway']}\n")
         md.append("\n---\n")
 
+    report_content = "\n".join(md)
     md_path = OUTPUT_DIR / f"scout_{today}.md"
-    md_path.write_text("\n".join(md))
+    md_path.write_text(report_content)
     print(f"\n✅ Markdown saved → {md_path}")
 
     # ===== JSON =====
@@ -171,6 +192,9 @@ def main():
     json_path = OUTPUT_DIR / f"scout_{today}.json"
     json_path.write_text(json.dumps(json_data, indent=2))
     print(f"✅ JSON saved     → {json_path}")
+
+    # ===== Send Email =====
+    send_email(report_content, today)
 
     print("\n=== TOP 5 TODAY ===")
     for i, p in enumerate(top, 1):

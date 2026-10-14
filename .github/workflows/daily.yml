@@ -2,8 +2,8 @@ name: Daily Scout
 
 on:
   schedule:
-    - cron: '0 14 * * *'   # 7:00 AM Pacific Time every day
-  workflow_dispatch:       # allows you to run it manually anytime
+    - cron: '0 14 * * *'   # 7:00 AM Pacific every day
+  workflow_dispatch:
 
 jobs:
   run-scout:
@@ -21,9 +21,11 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install arxiv requests
+        run: pip install arxiv requests resend
 
       - name: Run Scout bot
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: python scout.py
 
       - name: Commit and push report
