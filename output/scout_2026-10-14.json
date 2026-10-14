@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-14",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "score": 10,
+      "summary": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predictive world models to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.13912v1",
+      "pdf": "https://arxiv.org/pdf/2610.13912v1",
+      "source": "arXiv",
+      "published": "2026-10-09"
+    },
+    {
+      "rank": 2,
+      "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "score": 10,
+      "summary": "Personal agents increasingly connect to services across the web and applications by using tools. As the effects of their actions accumulate and interact across services, unintended or harmful outcomes can arise when agents fulfill benign user requests. Proactively identifying these compositional failures requires...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.13886v1",
+      "pdf": "https://arxiv.org/pdf/2610.13886v1",
+      "source": "arXiv",
+      "published": "2026-10-09"
+    },
+    {
+      "rank": 3,
+      "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+      "score": 10,
+      "summary": "When solving complex spatial reasoning tasks, ordinary humans naturally revisit the scenes from task-relevant viewpoints and mentally reconstruct the spatial layouts from those viewpoints. But can Large Vision-Language Models (LVLMs) proactively think in the same way? We term this ability Active Spatial Mentalization...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.13832v1",
+      "pdf": "https://arxiv.org/pdf/2610.13832v1",
+      "source": "arXiv",
+      "published": "2026-10-09"
+    },
+    {
+      "rank": 4,
+      "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+      "score": 10,
+      "summary": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks. A saved memory or successful final action does not by itself establish that a reusable capability was acquired; evaluation must...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.13829v1",
+      "pdf": "https://arxiv.org/pdf/2610.13829v1",
+      "source": "arXiv",
+      "published": "2026-10-09"
+    },
+    {
+      "rank": 5,
+      "title": "Systematic Multi-Agent Vision-and-Language Navigation: Formulation, Benchmark, and Method",
+      "score": 10,
+      "summary": "Vision-and-Language Navigation (VLN) has largely focused on a single agent following a single instruction, yet many real-world applications require teams of robots to tackle tasks beyond the capabilities of any individual agent. We present Systematic Multi-Agent Vision-and-Language Navigation, the first systematic...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2609.35965",
+      "pdf": "https://arxiv.org/pdf/2609.35965",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-13"
+    }
+  ]
+}
