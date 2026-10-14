@@ -2,6 +2,7 @@ import arxiv
 import requests
 import json
 import os
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -101,7 +102,7 @@ def score_paper(paper, goals):
     }
 
 def send_email(report_md: str, today: str):
-    """Send the report using Resend"""
+    """Send a nicely formatted HTML email using Resend"""
     api_key = os.getenv("RESEND_API_KEY")
     if not api_key:
         print("No RESEND_API_KEY found – skipping email.")
@@ -111,11 +112,38 @@ def send_email(report_md: str, today: str):
         import resend
         resend.api_key = api_key
 
+        # Convert simple Markdown to clean HTML
+        html = report_md
+        html = html.replace("# Scout Report", "<h1 style='color:#1a73e8;'>Scout Report")
+        html = html.replace("\n## ", "</h1><h2 style='color:#202124; margin-top:28px;'>")
+        html = html.replace("\n### ", "</h2><h3 style='color:#5f6368; margin-top:16px;'>")
+        html = html.replace("**", "<strong>").replace("**", "</strong>")
+        html = html.replace("\n---\n", "<hr style='border:none; border-top:1px solid #e0e0e0; margin:24px 0;'>")
+        html = html.replace("\n", "<br>")
+
+        # Make links clickable
+        html = re.sub(
+            r'(https?://[^\s<]+)',
+            r'<a href="\1" style="color:#1a73e8;">\1</a>',
+            html
+        )
+
+        full_html = f"""
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+                    max-width: 680px; margin: 0 auto; padding: 20px; color: #202124; line-height: 1.5;">
+            {html}
+            <br><br>
+            <p style="color:#5f6368; font-size:13px;">
+                Sent by your personal Berkeley AI Scout bot
+            </p>
+        </div>
+        """
+
         params = {
             "from": "Berkeley AI Scout <onboarding@resend.dev>",
             "to": [TO_EMAIL],
             "subject": f"Scout Report — {today}",
-            "html": f"<pre style='font-family: monospace; white-space: pre-wrap;'>{report_md}</pre>"
+            "html": full_html
         }
 
         email = resend.Emails.send(params)
@@ -194,53 +222,11 @@ def main():
     print(f"✅ JSON saved     → {json_path}")
 
     # ===== Send Email =====
-    def send_email(report_md: str, today: str):
-    """Send a nicely formatted HTML email using Resend"""
-    api_key = os.getenv("RESEND_API_KEY")
-    if not api_key:
-        print("No RESEND_API_KEY found – skipping email.")
-        return
+    send_email(report_content, today)
 
-    try:
-        import resend
-        resend.api_key = api_key
+    print("\n=== TOP 5 TODAY ===")
+    for i, p in enumerate(top, 1):
+        print(f"{i}. [{p['score']}] {p['title'][:80]}")
 
-        # Convert simple Markdown to clean HTML
-        html = report_md
-        html = html.replace("# Scout Report", "<h1 style='color:#1a73e8;'>Scout Report")
-        html = html.replace("\n## ", "</h1><h2 style='color:#202124; margin-top:28px;'>")
-        html = html.replace("\n### ", "</h2><h3 style='color:#5f6368; margin-top:16px;'>")
-        html = html.replace("**", "<strong>").replace("**", "</strong>")  # basic bold
-        html = html.replace("\n---\n", "<hr style='border:none; border-top:1px solid #e0e0e0; margin:24px 0;'>")
-        html = html.replace("\n", "<br>")
-
-        # Make links clickable
-        import re
-        html = re.sub(
-            r'(https?://[^\s<]+)',
-            r'<a href="\1" style="color:#1a73e8;">\1</a>',
-            html
-        )
-
-        full_html = f"""
-        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-                    max-width: 680px; margin: 0 auto; padding: 20px; color: #202124; line-height: 1.5;">
-            {html}
-            <br><br>
-            <p style="color:#5f6368; font-size:13px;">
-                Sent by your personal Berkeley AI Scout bot
-            </p>
-        </div>
-        """
-
-        params = {
-            "from": "Berkeley AI Scout <onboarding@resend.dev>",
-            "to": [TO_EMAIL],
-            "subject": f"Scout Report — {today}",
-            "html": full_html
-        }
-
-        email = resend.Emails.send(params)
-        print(f"✅ Email sent successfully to {TO_EMAIL}")
-    except Exception as e:
-        print(f"❌ Email failed: {e}")
+if __name__ == "__main__":
+    main()
