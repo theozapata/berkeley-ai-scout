@@ -1,37 +1,26 @@
 import arxiv
 import requests
 import json
-import os
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
-
-# Optional: for local LLM
-try:
-    import ollama
-    HAS_OLLAMA = True
-except ImportError:
-    HAS_OLLAMA = False
+import re
 
 # ============== CONFIG ==============
 GOALS_FILE = "goals.txt"
 OUTPUT_DIR = Path("output")
-MAX_ARXIV = 40
-MAX_HF = 30
+MAX_ARXIV = 35
+MAX_HF = 20
 TOP_N = 5
-ARXIV_CATEGORIES = ["cs.AI", "cs.LG", "cs.CL", "cs.MA", "cs.SE"]  # Multi-agent + relevant
-
-# Choose LLM backend
-USE_OLLAMA = True          # Set False if you prefer an API
-OLLAMA_MODEL = "llama3.2"  # or "mistral", "phi3", "qwen2.5", etc.
+ARXIV_CATEGORIES = ["cs.AI", "cs.LG", "cs.CL", "cs.MA"]
 # ====================================
 
 def load_goals():
     if Path(GOALS_FILE).exists():
         return Path(GOALS_FILE).read_text().strip()
-    return "AI student interested in agents, LLMs and practical systems."
+    return "UC Berkeley student focused on AI agents, multi-agent systems, LLMs, and practical projects."
 
 def fetch_arxiv_papers():
-    client = arxiv.Client(page_size=100, delay_seconds=3.0)
+    client = arxiv.Client(page_size=50, delay_seconds=4.0)
     query = " OR ".join([f"cat:{cat}" for cat in ARXIV_CATEGORIES])
     search = arxiv.Search(
         query=query,
@@ -39,16 +28,19 @@ def fetch_arxiv_papers():
         sort_by=arxiv.SortCriterion.SubmittedDate
     )
     papers = []
-    for result in client.results(search):
-        papers.append({
-            "title": result.title,
-            "authors": [a.name for a in result.authors[:4]],
-            "abstract": result.summary.replace("\n", " "),
-            "url": result.entry_id,
-            "pdf": result.pdf_url,
-            "published": result.published.strftime("%Y-%m-%d"),
-            "source": "arXiv"
-        })
+    try:
+        for result in client.results(search):
+            papers.append({
+                "title": result.title,
+                "authors": [a.name for a in result.authors[:4]],
+                "abstract": result.summary.replace("\n", " "),
+                "url": result.entry_id,
+                "pdf": result.pdf_url,
+                "published": result.published.strftime("%Y-%m-%d"),
+                "source": "arXiv"
+            })
+    except Exception as e:
+        print(f"arXiv warning: {e}")
     return papers
 
 def fetch_hf_daily():
@@ -61,7 +53,7 @@ def fetch_hf_daily():
             papers.append({
                 "title": item.get("title") or details.get("title", "Untitled"),
                 "authors": [],
-                "abstract": details.get("abstract", "")[:1500],
+                "abstract": details.get("abstract", "")[:1400],
                 "url": details.get("arxiv_page_url") or item.get("page_url", ""),
                 "pdf": details.get("pdf_url", ""),
                 "published": item.get("scraped_date", datetime.now().strftime("%Y-%m-%d")),
@@ -69,54 +61,47 @@ def fetch_hf_daily():
             })
         return papers
     except Exception as e:
-        print(f"HF fetch failed: {e}")
+        print(f"HuggingFace fetch failed: {e}")
         return []
 
-def score_and_summarize(paper, goals, llm_backend="ollama"):
-    prompt = f"""
-You are an expert AI research scout helping a UC Berkeley student.
-
-Student goals:
-{goals}
-
-Paper:
-Title: {paper['title']}
-Abstract: {paper['abstract'][:1200]}
-
-Tasks:
-1. Give a relevance score from 1-10 (10 = extremely relevant to the student's goals).
-2. Write a 2-3 sentence summary focused on why it matters (or doesn't).
-3. One practical takeaway or next action for the student.
-
-Respond in this exact JSON format only:
-{{
-  "score": 8,
-  "summary": "...",
-  "takeaway": "..."
-}}
-"""
-    try:
-        if llm_backend == "ollama" and HAS_OLLAMA:
-            response = ollama.chat(model=OLLAMA_MODEL, messages=[{"role": "user", "content": prompt}])
-            content = response["message"]["content"]
-        else:
-            # Fallback: simple keyword scoring if no LLM
-            keywords = ["agent", "multi-agent", "llm", "language model", "crewai", "langgraph", "tool use", "planning"]
-            score = sum(2 for k in keywords if k in (paper["title"] + paper["abstract"]).lower())
-            score = min(score + 3, 10)
-            return {
-                "score": score,
-                "summary": paper["abstract"][:300] + "...",
-                "takeaway": "Read abstract and decide if worth deep dive."
-            }
-
-        # Extract JSON
-        start = content.find("{")
-        end = content.rfind("}") + 1
-        return json.loads(content[start:end])
-    except Exception as e:
-        print(f"Scoring failed for {paper['title'][:50]}: {e}")
-        return {"score": 5, "summary": paper["abstract"][:250], "takeaway": "Manual review needed."}
+def score_paper(paper, goals):
+    """Reliable scoring that works without any LLM (perfect for GitHub Actions)"""
+    text = (paper["title"] + " " + paper["abstract"]).lower()
+    
+    # High-value keywords for your goals
+    high = ["agent", "multi-agent", "multi agent", "llm agent", "tool use", "tool-use",
+            "planning", "langgraph", "crewai", "autogen", "agentic", "self-improvement",
+            "recursive", "memory", "retrieval", "rag", "evaluation of agents"]
+    medium = ["language model", "llm", "large language", "reasoning", "tool calling",
+              "orchestration", "framework", "benchmark", "open-source"]
+    
+    score = 4  # base
+    for word in high:
+        if word in text:
+            score += 1.5
+    for word in medium:
+        if word in text:
+            score += 0.7
+            
+    score = min(round(score), 10)
+    
+    # Simple but useful summary
+    abstract = paper["abstract"]
+    summary = abstract[:320].rsplit(" ", 1)[0] + "..." if len(abstract) > 320 else abstract
+    
+    # Actionable takeaway
+    if score >= 8:
+        takeaway = "High priority – strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea."
+    elif score >= 6:
+        takeaway = "Worth a quick look. Skim the abstract and PDF if the topic matches your current focus."
+    else:
+        takeaway = "Lower priority for now. You can skip unless the title strongly interests you."
+    
+    return {
+        "score": score,
+        "summary": summary,
+        "takeaway": takeaway
+    }
 
 def main():
     OUTPUT_DIR.mkdir(exist_ok=True)
@@ -126,41 +111,70 @@ def main():
     papers = fetch_arxiv_papers() + fetch_hf_daily()
     print(f"Fetched {len(papers)} papers")
 
+    # Deduplicate
+    seen = set()
+    unique = []
+    for p in papers:
+        t = p["title"].lower().strip()
+        if t not in seen:
+            seen.add(t)
+            unique.append(p)
+
     scored = []
-    for i, p in enumerate(papers):
-        print(f"Scoring {i+1}/{len(papers)}: {p['title'][:60]}...")
-        result = score_and_summarize(p, goals)
+    for i, p in enumerate(unique):
+        print(f"Scoring {i+1}/{len(unique)}: {p['title'][:60]}...")
+        result = score_paper(p, goals)
         p.update(result)
         scored.append(p)
 
-    # Sort by score
-    scored.sort(key=lambda x: x.get("score", 0), reverse=True)
+    scored.sort(key=lambda x: x["score"], reverse=True)
     top = scored[:TOP_N]
-
-    # Generate Markdown report
     today = datetime.now().strftime("%Y-%m-%d")
+
+    # ===== Markdown Report =====
     md = [f"# Scout Report — {today}\n"]
-    md.append(f"**Goals used:** {goals[:200]}...\n")
+    md.append(f"**For:** UC Berkeley AI student  \n**Papers reviewed:** {len(unique)}\n")
     md.append("---\n")
 
     for i, p in enumerate(top, 1):
-        md.append(f"## {i}. {p['title']}  (Score: {p.get('score', '?')}/10)\n")
-        md.append(f"**Source:** {p['source']} | **Date:** {p['published']}\n")
+        md.append(f"## {i}. {p['title']}\n")
+        md.append(f"**Score:** {p['score']}/10  •  **Source:** {p['source']}  •  **Date:** {p['published']}\n")
         md.append(f"**Link:** {p['url']}\n")
         if p.get("pdf"):
             md.append(f"**PDF:** {p['pdf']}\n")
-        md.append(f"\n{p.get('summary', '')}\n")
-        md.append(f"\n**Takeaway:** {p.get('takeaway', '')}\n")
+        md.append(f"\n### Summary\n{p['summary']}\n")
+        md.append(f"\n### Recommended Action\n{p['takeaway']}\n")
         md.append("\n---\n")
 
-    report_path = OUTPUT_DIR / f"scout_{today}.md"
-    report_path.write_text("\n".join(md))
-    print(f"\n✅ Report saved to {report_path}")
+    md_path = OUTPUT_DIR / f"scout_{today}.md"
+    md_path.write_text("\n".join(md))
+    print(f"\n✅ Markdown saved → {md_path}")
 
-    # Also print a short version
+    # ===== JSON =====
+    json_data = {
+        "date": today,
+        "top_papers": [
+            {
+                "rank": i,
+                "title": p["title"],
+                "score": p["score"],
+                "summary": p["summary"],
+                "takeaway": p["takeaway"],
+                "url": p["url"],
+                "pdf": p.get("pdf", ""),
+                "source": p["source"],
+                "published": p["published"]
+            }
+            for i, p in enumerate(top, 1)
+        ]
+    }
+    json_path = OUTPUT_DIR / f"scout_{today}.json"
+    json_path.write_text(json.dumps(json_data, indent=2))
+    print(f"✅ JSON saved     → {json_path}")
+
     print("\n=== TOP 5 TODAY ===")
     for i, p in enumerate(top, 1):
-        print(f"{i}. [{p.get('score')}] {p['title'][:80]}")
+        print(f"{i}. [{p['score']}] {p['title'][:80]}")
 
 if __name__ == "__main__":
     main()

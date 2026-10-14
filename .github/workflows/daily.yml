@@ -2,14 +2,18 @@ name: Daily Scout
 
 on:
   schedule:
-    - cron: '0 12 * * *'   # 12:00 UTC every day (adjust to your morning)
-  workflow_dispatch:       # allows manual run
+    - cron: '0 14 * * *'   # 7:00 AM Pacific Time every day
+  workflow_dispatch:       # allows you to run it manually anytime
 
 jobs:
   run-scout:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -17,16 +21,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: |
-          pip install arxiv requests
-          # For Ollama you would need a self-hosted runner or API instead
+        run: pip install arxiv requests
 
-      - name: Run Scout
+      - name: Run Scout bot
         run: python scout.py
-        env:
-          # Add any API keys here later if you switch from Ollama
 
-      - name: Commit report
+      - name: Commit and push report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

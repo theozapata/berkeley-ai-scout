@@ -1,5 +1,19 @@
-I am a second-year UC Berkeley student diving deep into AI.
-Primary interests: AI agents, multi-agent systems, LLMs, agent frameworks (CrewAI, LangGraph, etc.), practical projects, research opportunities at BAIR/Launchpad, and building a strong AI career portfolio.
-Secondary: efficient training, retrieval-augmented generation, evaluation of agents, open-source tools.
-Ignore pure theory papers with no practical angle unless they are breakthroughs.
-Prefer papers from the last 3–7 days.
+I am a second-year undergraduate student at UC Berkeley focused on building a strong career in AI.
+
+Main interests (in priority order):
+- AI Agents and Multi-Agent Systems (especially practical frameworks like CrewAI, LangGraph, AutoGen, etc.)
+- Large Language Models and how to use them effectively in real systems
+- Building useful AI tools and projects that I can put in my portfolio
+- Research opportunities at Berkeley (BAIR, Launchpad, RDI, professors working on agents)
+- Internships and career preparation in AI/ML engineering or research
+
+I care most about:
+- Papers that are practical and actionable
+- New agent architectures, tool use, planning, memory, evaluation of agents
+- Open-source tools and frameworks I can actually try
+- Work that helps me stay ahead as a student who wants to go deep into AI
+
+Lower priority:
+- Pure theoretical papers with no clear application
+- Very narrow computer vision or robotics papers unless they involve agents
+
