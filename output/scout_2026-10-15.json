@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-15",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition",
+      "score": 10,
+      "summary": "3D object composition is pivotal to digital content creation and robot simulation, while also serving as a critical testbed for physical intelligence in foundation models. Previous methods either leverage large language models to directly predict object coordinates, or utilize generative diffusion priors to synthesize...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.20560v1",
+      "pdf": "https://arxiv.org/pdf/2610.20560v1",
+      "source": "arXiv",
+      "published": "2026-10-14"
+    },
+    {
+      "rank": 2,
+      "title": "PerSo: Investigating Facets of LLMs' Social Intelligence in Real-World Persuasion Scenarios",
+      "score": 10,
+      "summary": "Understanding the social intelligence of large language models (LLMs) is increasingly important for applications involving human-AI interaction and multi-agent environments. Social intelligence comprises two aspects: cognitive intelligence, the ability to infer others' mental states, and behavioral intelligence, the...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.20548v1",
+      "pdf": "https://arxiv.org/pdf/2610.20548v1",
+      "source": "arXiv",
+      "published": "2026-10-14"
+    },
+    {
+      "rank": 3,
+      "title": "One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness",
+      "score": 9,
+      "summary": "Post-training binds the competence of an LLM agent to the interface it was trained on. Semantics-preserving perturbations of that interface, such as renaming an action or changing the notation, leave the underlying task unchanged yet make the agent worse at it. Scoring each sample independently means interface...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.20576v1",
+      "pdf": "https://arxiv.org/pdf/2610.20576v1",
+      "source": "arXiv",
+      "published": "2026-10-14"
+    },
+    {
+      "rank": 4,
+      "title": "The Wealth of Agents: Scaling Agentic AI Across Developers",
+      "score": 9,
+      "summary": "Today's agentic systems are typically designed, built, and deployed by single developers with full control over all participating agents. While this simplifies development, it limits the potential scale of agentic systems. We study multi-developer agentic systems (MDAs) which enable developers to collaboratively build...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.20518v1",
+      "pdf": "https://arxiv.org/pdf/2610.20518v1",
+      "source": "arXiv",
+      "published": "2026-10-14"
+    },
+    {
+      "rank": 5,
+      "title": "ReaDy: Recurrent States as Dynamic Context for Speculative Drafting in Hybrid Linear Attention Large Language Models",
+      "score": 9,
+      "summary": "Speculative decoding accelerates autoregressive generation by drafting multiple tokens per step, yet feature-based drafters rely on target hidden features whose contextual emphasis may not align with the needs of subsequent draft positions. Hybrid linear attention (HLA) models maintain compact recurrent states that...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.20503v1",
+      "pdf": "https://arxiv.org/pdf/2610.20503v1",
+      "source": "arXiv",
+      "published": "2026-10-14"
+    }
+  ]
+}
