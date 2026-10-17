@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-17",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "score": 10,
+      "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.22344v1",
+      "pdf": "https://arxiv.org/pdf/2610.22344v1",
+      "source": "arXiv",
+      "published": "2026-10-15"
+    },
+    {
+      "rank": 2,
+      "title": "A team of Gemini 4 Argon agents beats Minecraft",
+      "score": 10,
+      "summary": "We placed four Gemini 4 Argon agents in a sandboxed Minecraft survival world and gave them one goal: defeat the Ender Dragon. Each agent controlled a player via an open-source library called Mineflayer and coordinated with its teammates through in-game chat and shared memory. No one assigned roles or wrote game logic....",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.22319v1",
+      "pdf": "https://arxiv.org/pdf/2610.22319v1",
+      "source": "arXiv",
+      "published": "2026-10-15"
+    },
+    {
+      "rank": 3,
+      "title": "Learning to Steer LLM Agents and Multi-Agent Systems",
+      "score": 10,
+      "summary": "Large language model (LLM)-based agents and multi-agent systems increasingly tackle complex tasks through long-horizon tool use and inter-agent collaboration. However, these systems are prone to deviating from the overall goal as execution unfolds, which wastes execution resources and leads to undesired outcomes, a...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.22316v1",
+      "pdf": "https://arxiv.org/pdf/2610.22316v1",
+      "source": "arXiv",
+      "published": "2026-10-15"
+    },
+    {
+      "rank": 4,
+      "title": "CAT-alyzing Honesty: Continuous Adversarial Training for Transferable LLM Honesty",
+      "score": 10,
+      "summary": "Large language models (LLMs) are becoming prevalent in scenarios where honesty is critical. However, despite alignment training, these models still exhibit dishonest behaviour, such as outputting claims that contradict some knowledge or are not supported by what is accessible in context. We introduce Continuous...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.22292v1",
+      "pdf": "https://arxiv.org/pdf/2610.22292v1",
+      "source": "arXiv",
+      "published": "2026-10-15"
+    },
+    {
+      "rank": 5,
+      "title": "DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding",
+      "score": 10,
+      "summary": "Meet DeltaStreamer , an open-source agent that continuously watches video, remembers what happened, and revisits visual evidence when memory falls short. \ud83c\udfac Video keeps arriving, while questions can come at any time. Before a question appears, the agent cannot know which details will matter. By the time it does, the...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.19849",
+      "pdf": "https://arxiv.org/pdf/2610.19849",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-17"
+    }
+  ]
+}
