@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-19",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "score": 10,
+      "summary": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance,...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.23845v1",
+      "pdf": "https://arxiv.org/pdf/2610.23845v1",
+      "source": "arXiv",
+      "published": "2026-10-16"
+    },
+    {
+      "rank": 2,
+      "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+      "score": 10,
+      "summary": "Scientific discovery requires developing worthwhile hypotheses into practical investigations, yet learning from this evolving research process remains challenging. We introduce an operational definition of valuable and testable research hypotheses: evidence-grounded claims about consequential uncertainties, coupled...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.23839v1",
+      "pdf": "https://arxiv.org/pdf/2610.23839v1",
+      "source": "arXiv",
+      "published": "2026-10-16"
+    },
+    {
+      "rank": 3,
+      "title": "DLite: History-free Speculative Decoding for Agentic AI",
+      "score": 10,
+      "summary": "Speculative decoding has become a mainstream technique for accelerating large language model (LLM) inference by using a lightweight draft model to generate candidate tokens that are subsequently verified by the target model. However, agentic workloads introduce long and continuously evolving contexts and frequent...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.23787v1",
+      "pdf": "https://arxiv.org/pdf/2610.23787v1",
+      "source": "arXiv",
+      "published": "2026-10-16"
+    },
+    {
+      "rank": 4,
+      "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+      "score": 8,
+      "summary": "Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it more sycophantic, and training it to write insecure code can cause broad misalignment on prompts unrelated to coding. We refer to a relationship between...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.23847v1",
+      "pdf": "https://arxiv.org/pdf/2610.23847v1",
+      "source": "arXiv",
+      "published": "2026-10-16"
+    },
+    {
+      "rank": 5,
+      "title": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+      "score": 8,
+      "summary": "Designing RNA sequences that reliably fold into specific secondary structures is essential for understanding their biological functions but remains a challenging computational problem. We propose CocoRNA, a cooperative multi-agent reinforcement learning framework for RNA inverse design. CocoRNA simplifies the design...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.23820v1",
+      "pdf": "https://arxiv.org/pdf/2610.23820v1",
+      "source": "arXiv",
+      "published": "2026-10-16"
+    }
+  ]
+}
