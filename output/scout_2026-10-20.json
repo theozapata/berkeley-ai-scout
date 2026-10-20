@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-20",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "score": 10,
+      "summary": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.26860v1",
+      "pdf": "https://arxiv.org/pdf/2610.26860v1",
+      "source": "arXiv",
+      "published": "2026-10-19"
+    },
+    {
+      "rank": 2,
+      "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "score": 10,
+      "summary": "In this paper, we systematically investigate the mechanisms, scaling behavior, and generalization of physical Recursive self-improvement. We introduce PhysRSI-eval to quantify physical RSI through a five-axis metric: First-Attempt Performance, Efficiency, Success, Budget and Improvement from failure. Different VLMs...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.26848v1",
+      "pdf": "https://arxiv.org/pdf/2610.26848v1",
+      "source": "arXiv",
+      "published": "2026-10-19"
+    },
+    {
+      "rank": 3,
+      "title": "AnyGoal: On World Model Generalization Beyond Expert Rollouts",
+      "score": 10,
+      "summary": "The goal of a world model is to capture the dynamics of an environment. This has the great appeal that it allows agents to plan and simulate a course of actions with the help of a world model. For these uses to be reliable, however, the learned dynamics must behave well beyond the specific state-action combinations...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.26844v1",
+      "pdf": "https://arxiv.org/pdf/2610.26844v1",
+      "source": "arXiv",
+      "published": "2026-10-19"
+    },
+    {
+      "rank": 4,
+      "title": "RefCraft: Benchmarking Visual-Reference-Conditioned Agentic Generation through Web Development",
+      "score": 10,
+      "summary": "Beyond basic tool use and coding skills, effectively incorporating visual references into agentic generation is equally essential for applying AI agents to real-world productivity tasks. We study this crucial capability through webpage development, a practical and readily evaluable setting in which existing benchmarks...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.26826v1",
+      "pdf": "https://arxiv.org/pdf/2610.26826v1",
+      "source": "arXiv",
+      "published": "2026-10-19"
+    },
+    {
+      "rank": 5,
+      "title": "MemT-1.0: Towards Memory-Native Evolution",
+      "score": 10,
+      "summary": "Memory-native evolution requires making memory an intrinsic capability of foundation models, enabling them to continuously accumulate and utilize information. To this end, we introduce MemT-1.0, a new architecture of memory foundation models that internalize memory as part of model computation. Building on Metis,...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.26825v1",
+      "pdf": "https://arxiv.org/pdf/2610.26825v1",
+      "source": "arXiv",
+      "published": "2026-10-19"
+    }
+  ]
+}
