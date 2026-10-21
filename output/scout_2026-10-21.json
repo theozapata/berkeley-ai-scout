@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-21",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+      "score": 10,
+      "summary": "Agentic artificial intelligence (AI) systems hold immense potential for automating complex workflows in materials discovery and design, but extending them to domain-intensive mechanistic investigations remains challenging. Here, we present GBClaw, an agentic AI framework for investigating the structure and deformation...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.28629v1",
+      "pdf": "https://arxiv.org/pdf/2610.28629v1",
+      "source": "arXiv",
+      "published": "2026-10-20"
+    },
+    {
+      "rank": 2,
+      "title": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+      "score": 10,
+      "summary": "Warehouse robot fleets continuously observe operational conditions, but preserving these observations as reusable semantic memory incurs substantial computation, communication, and storage costs. For example, explaining recurring aisle blockages can require reviewing video from multiple robots across several shifts....",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.28624v1",
+      "pdf": "https://arxiv.org/pdf/2610.28624v1",
+      "source": "arXiv",
+      "published": "2026-10-20"
+    },
+    {
+      "rank": 3,
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "score": 10,
+      "summary": "Modern distributed microservice deployments generate massive volumes of heterogeneous, multi-format observability logs across physically and logically partitioned infrastructure. Isolating root causes during cascading failures remains an arduous task for Site Reliability Engineers (SREs), bottlenecked by manual...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.28611v1",
+      "pdf": "https://arxiv.org/pdf/2610.28611v1",
+      "source": "arXiv",
+      "published": "2026-10-20"
+    },
+    {
+      "rank": 4,
+      "title": "Cache Engineering for Agents",
+      "score": 10,
+      "summary": "Large Language Model (LLM) agents can handle increasingly complex tasks, navigating long trajectories of observations and actions. As these trajectories grow, key-value (KV) cache I/O and storage become the dominant cost. Trajectories can also exceed the LLM's maximum context length, requiring control over active...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.28577v1",
+      "pdf": "https://arxiv.org/pdf/2610.28577v1",
+      "source": "arXiv",
+      "published": "2026-10-20"
+    },
+    {
+      "rank": 5,
+      "title": "OptScientist: Automated Discovery of Optimization Laws",
+      "score": 10,
+      "summary": "Many scientific phenomena are best understood as outcomes of underlying optimization problems, yet automated scientific discovery has largely focused on recovering equations that describe observed input-output patterns. We introduce OptScientist, a novel automated framework for discovering compact symbolic...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.28562v1",
+      "pdf": "https://arxiv.org/pdf/2610.28562v1",
+      "source": "arXiv",
+      "published": "2026-10-20"
+    }
+  ]
+}
