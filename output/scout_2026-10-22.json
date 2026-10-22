@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-22",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research",
+      "score": 10,
+      "summary": "Quantitative research is an iterative loop: a researcher proposes a market hypothesis, implements it as an executable signal, tests it on historical data, and decides what to keep. Existing benchmarks score formulas, code, or individual trading decisions, leaving open whether large language models (LLMs) can complete...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.30113v1",
+      "pdf": "https://arxiv.org/pdf/2610.30113v1",
+      "source": "arXiv",
+      "published": "2026-10-21"
+    },
+    {
+      "rank": 2,
+      "title": "Did the Problem Actually Get Harder? Testing LLMs on Paired P and NP-Complete Problems Hardened by Adversarial Multi-Agent Rewriting",
+      "score": 10,
+      "summary": "Many NP-complete (NPC) problems have a polynomial-time (P) twin that differs in a single structural detail, such as 3- versus 2-colouring a graph. A model that reasons rather than recalls should notice which side of this boundary a problem falls on, yet existing benchmarks either fix the wording of each task or ignore...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.30103v1",
+      "pdf": "https://arxiv.org/pdf/2610.30103v1",
+      "source": "arXiv",
+      "published": "2026-10-21"
+    },
+    {
+      "rank": 3,
+      "title": "HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning",
+      "score": 10,
+      "summary": "Harness optimization, which improves an agent's prompts, tools, and workflows, is an increasingly effective way to enhance agents built on frozen or closed-source LLMs. Leading approaches such as the Darwin--Godel Machine and the Huxley--Godel Machine (HGM) rely on recursive self-improvement and were developed mainly...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.30042v1",
+      "pdf": "https://arxiv.org/pdf/2610.30042v1",
+      "source": "arXiv",
+      "published": "2026-10-21"
+    },
+    {
+      "rank": 4,
+      "title": "LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data",
+      "score": 9,
+      "summary": "Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.30132v1",
+      "pdf": "https://arxiv.org/pdf/2610.30132v1",
+      "source": "arXiv",
+      "published": "2026-10-21"
+    },
+    {
+      "rank": 5,
+      "title": "Environment Duels: A Microcosm of LLM Co-Evolution",
+      "score": 9,
+      "summary": "Through a tangle of real-world interactions, from synthetic training pipelines to data shared on the open web, frontier LLMs absorb what their predecessors and competitors create. How well does each model play its role in this ecosystem, as a creator and as a solver? We introduce Environment Duels, a dynamic agentic...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.30116v1",
+      "pdf": "https://arxiv.org/pdf/2610.30116v1",
+      "source": "arXiv",
+      "published": "2026-10-21"
+    }
+  ]
+}
