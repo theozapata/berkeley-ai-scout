@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-25",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Social-HUMINT: An LLM-Augmented Unified Framework for Measuring Social Media Exposure",
+      "score": 10,
+      "summary": "In the post-API landscape, social-media profiling has become inexpensive and automated: Large Language Models (LLMs) can extract structured information from unstructured content and deduce attributes users never disclosed. A person's true exposure is not what they post but what can be inferred from it. As these...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.31573v1",
+      "pdf": "https://arxiv.org/pdf/2610.31573v1",
+      "source": "arXiv",
+      "published": "2026-10-22"
+    },
+    {
+      "rank": 2,
+      "title": "Toward Recursive Self-Improvement in Physical AI",
+      "score": 10,
+      "summary": "Toward Recursive Self-Improvement in Physical AI Recursive self-improvement (RSI) asks for more than a better robot: the process that produces improvements should itself get better. Digital agents already rewrite their own code and check each version against executable tests. But what does it take to carry these...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.29677",
+      "pdf": "https://arxiv.org/pdf/2610.29677",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-25"
+    },
+    {
+      "rank": 3,
+      "title": "Agent Mosaic: Recognizing Confidentiality Leaks in Agentic LLM Systems",
+      "score": 10,
+      "summary": "We introduce Agent Mosaic, a study of confidentiality leaks in LLM agents where combining individually accessible information reveals sensitive conclusions. Through evaluations across simulated and live agents, we show that such leaks occur even under benign queries and persist despite explicit safeguards. Benchmark...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.30418",
+      "pdf": "https://arxiv.org/pdf/2610.30418",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-25"
+    },
+    {
+      "rank": 4,
+      "title": "RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing",
+      "score": 10,
+      "summary": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.19705",
+      "pdf": "https://arxiv.org/pdf/2610.19705",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-25"
+    },
+    {
+      "rank": 5,
+      "title": "Heartbeat Thinking: Speculative Reasoning and Tool Execution While Listening in Realtime Voice Agents",
+      "score": 10,
+      "summary": "Tool-using voice agents often leave users waiting after speech ends, even when actionable information arrives earlier in the request. Speculative approaches begin work during speech, but chunk-bounded or interrupt-on-update generation can truncate a tool call before its arguments are complete. This couples computation...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.26233",
+      "pdf": "https://arxiv.org/pdf/2610.26233",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-25"
+    }
+  ]
+}
