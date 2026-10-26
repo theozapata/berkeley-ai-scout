@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-26",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+      "score": 10,
+      "summary": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrangements, yet their...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.32978v1",
+      "pdf": "https://arxiv.org/pdf/2610.32978v1",
+      "source": "arXiv",
+      "published": "2026-10-23"
+    },
+    {
+      "rank": 2,
+      "title": "J-Comm: Jacobian-Guided Latent Communication between LLM Agents",
+      "score": 10,
+      "summary": "Latent communication requires both an effective continuous reasoning process and an interface through which an external model can leverage its intermediate computation. We present J-Comm, a framework comprising two core components. First, a training-free Geometric Agreement for Latent Reasoning (GEAR) reweights token...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.32871v1",
+      "pdf": "https://arxiv.org/pdf/2610.32871v1",
+      "source": "arXiv",
+      "published": "2026-10-23"
+    },
+    {
+      "rank": 3,
+      "title": "Yalda-Embedding: Open Development of a Competitive Persian Retrieval Model",
+      "score": 8,
+      "summary": "Despite advances in multilingual text representations, effective dense retrieval for Persian remains constrained by the limited availability of language-specific training resources and compact embedding models. We present Yalda Embedding, a 595.8-million-parameter Persian retrieval model adapted from...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.32933v1",
+      "pdf": "https://arxiv.org/pdf/2610.32933v1",
+      "source": "arXiv",
+      "published": "2026-10-23"
+    },
+    {
+      "rank": 4,
+      "title": "Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+      "score": 8,
+      "summary": "Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code produced by LLM...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.32891v1",
+      "pdf": "https://arxiv.org/pdf/2610.32891v1",
+      "source": "arXiv",
+      "published": "2026-10-23"
+    },
+    {
+      "rank": 5,
+      "title": "Reinforcement Learning with Multi-Step Transition Predictions: A Bellman Theory",
+      "score": 8,
+      "summary": "Multi-step predictions of future transition realizations can improve reinforcement learning, but their value remains difficult to quantify. Directly including these predictions in the state can lead to exponential state-space growth, making direct dynamic programming computationally expensive. We study discounted...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.32887v1",
+      "pdf": "https://arxiv.org/pdf/2610.32887v1",
+      "source": "arXiv",
+      "published": "2026-10-23"
+    }
+  ]
+}
