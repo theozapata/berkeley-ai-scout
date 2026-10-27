@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-27",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models",
+      "score": 10,
+      "summary": "A vulnerability costs more to fix the later it is discovered. As coding agents generate code faster than developers can review it, software needs a first line of defense screening each new function in real time. LLM agents have recently become capable of finding real-world vulnerabilities by working as a security...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.35829v1",
+      "pdf": "https://arxiv.org/pdf/2610.35829v1",
+      "source": "arXiv",
+      "published": "2026-10-26"
+    },
+    {
+      "rank": 2,
+      "title": "A Unified Arena for LLM Agents across Diverse Eurogame",
+      "score": 10,
+      "summary": "Interactive environments offer a practical way to evaluate large language model (LLM) agents, and competitive games extend this evaluation to decisions shaped by competing goals and other agents' choices. Yet existing evaluations confined to individual games or execution frameworks leave unclear which competitive...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.35773v1",
+      "pdf": "https://arxiv.org/pdf/2610.35773v1",
+      "source": "arXiv",
+      "published": "2026-10-26"
+    },
+    {
+      "rank": 3,
+      "title": "Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents",
+      "score": 10,
+      "summary": "Trajectory2Gym is a framework for scaling tool-use agents through compositional coverage and decision-grounded supervision. It constructs executable interactions that capture multi-step dependencies and trains agents on decisions supported by their visible interaction history. Across five Qwen3 model scales,...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.33568",
+      "pdf": "https://arxiv.org/pdf/2610.33568",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 4,
+      "title": "Continual Learning Exam: Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents",
+      "score": 10,
+      "summary": "\ud83d\ude80 Introducing Continual Learning Exam (CLE): Benchmarking Long-Horizon RSI and Experiential Learning in LLM Agents! \ud83e\udde0 Can LLM agents truly learn from experience and continuously improve over time? Most existing agent benchmarks focus on whether agents can solve individual tasks. But real-world intelligence requires...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.33956",
+      "pdf": "https://arxiv.org/pdf/2610.33956",
+      "source": "HuggingFace Daily",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 5,
+      "title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy",
+      "score": 9,
+      "summary": "Frontier multimodal large language models (MLLMs) can control robots without robot-specific training, but how their capabilities compare and interact with post-trained vision-language-action (VLA) and world action model (WAM) policies across manipulation demands remains to be thoroughly evaluated. In this report, we...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.35832v1",
+      "pdf": "https://arxiv.org/pdf/2610.35832v1",
+      "source": "arXiv",
+      "published": "2026-10-26"
+    }
+  ]
+}
