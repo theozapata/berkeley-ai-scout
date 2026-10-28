@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-28",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "score": 10,
+      "summary": "Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitations, stochastic...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.37651v1",
+      "pdf": "https://arxiv.org/pdf/2610.37651v1",
+      "source": "arXiv",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 2,
+      "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "score": 10,
+      "summary": "Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without being told what to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.37649v1",
+      "pdf": "https://arxiv.org/pdf/2610.37649v1",
+      "source": "arXiv",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 3,
+      "title": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "score": 10,
+      "summary": "We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which explicitly controls...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.37648v1",
+      "pdf": "https://arxiv.org/pdf/2610.37648v1",
+      "source": "arXiv",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 4,
+      "title": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
+      "score": 10,
+      "summary": "When an LLM group's discussion is compressed into a short memory for a final decision maker, what should the memory keep? Two natural heuristics keep the rarest claims or the claims relevant to the decision criteria. On hidden-profile tasks both look attractive, because how widely a fact is held is confounded with...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.37624v1",
+      "pdf": "https://arxiv.org/pdf/2610.37624v1",
+      "source": "arXiv",
+      "published": "2026-10-27"
+    },
+    {
+      "rank": 5,
+      "title": "TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information",
+      "score": 10,
+      "summary": "Many real-world decisions require teams to integrate information distributed across participants. Yet AI agents are still primarily trained and benchmarked in isolation. We introduce TeamGym, an environment for evaluating and training language model-based agents on team decision-making problems constructed from...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.37571v1",
+      "pdf": "https://arxiv.org/pdf/2610.37571v1",
+      "source": "arXiv",
+      "published": "2026-10-27"
+    }
+  ]
+}
