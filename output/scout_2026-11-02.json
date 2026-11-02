@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-02",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Subquadratic Attention with a Hierarchical Tree-Structured Indexer",
+      "score": 10,
+      "summary": "The quadratic scaling of attention is a fundamental bottleneck limiting the long-context capabilities of large language models (LLMs). A variety of approaches have attempted to circumvent this, but they either fail to match attention's expressiveness (e.g., sliding-window or linear attention variants with fixed-size...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.42112v1",
+      "pdf": "https://arxiv.org/pdf/2610.42112v1",
+      "source": "arXiv",
+      "published": "2026-10-30"
+    },
+    {
+      "rank": 2,
+      "title": "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+      "score": 10,
+      "summary": "Low-Earth orbit (LEO) satellite networks present a challenging routing environment due to rapidly changing topology, traffic, and link conditions. Existing deep reinforcement learning (DRL) routing methods typically rely on current observations and information encoded in network weights, limiting their ability to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.42068v1",
+      "pdf": "https://arxiv.org/pdf/2610.42068v1",
+      "source": "arXiv",
+      "published": "2026-10-30"
+    },
+    {
+      "rank": 3,
+      "title": "R^2Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop",
+      "score": 10,
+      "summary": "R\u00b2Orch (Recursive Self-Play Orchestration) trains an agent orchestrator without a hand-designed curriculum: an inner self-play loop improves the orchestrator on tasks a Proposer picks, and an outer loop improves how that inner loop learns. The Proposer is rewarded for tasks whose rollouts keep reaching different...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2610.22740",
+      "pdf": "https://arxiv.org/pdf/2610.22740",
+      "source": "HuggingFace Daily",
+      "published": "2026-11-02"
+    },
+    {
+      "rank": 4,
+      "title": "Latent Reasoning in Continuous Space for Unified Multimodal Models",
+      "score": 9,
+      "summary": "Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.42149v1",
+      "pdf": "https://arxiv.org/pdf/2610.42149v1",
+      "source": "arXiv",
+      "published": "2026-10-30"
+    },
+    {
+      "rank": 5,
+      "title": "Hierarchical World Models with Implicit Dynamics",
+      "score": 9,
+      "summary": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent skills, leading to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2610.42146v1",
+      "pdf": "https://arxiv.org/pdf/2610.42146v1",
+      "source": "arXiv",
+      "published": "2026-10-30"
+    }
+  ]
+}
