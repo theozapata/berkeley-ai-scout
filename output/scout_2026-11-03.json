@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-03",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "DiabAgent: Toward Agentic Physiological Control",
+      "score": 10,
+      "summary": "As pretraining scales, medical language models have advanced rapidly in clinical question answering. Their ability to achieve effective physiological control through sustained intervention still lacks systematic quantitative evaluation. Type 1 diabetes provides a concrete setting: impaired insulin secretion creates...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.03601v1",
+      "pdf": "https://arxiv.org/pdf/2611.03601v1",
+      "source": "arXiv",
+      "published": "2026-11-02"
+    },
+    {
+      "rank": 2,
+      "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "score": 10,
+      "summary": "Large language model (LLM) coding agents increasingly operate with shell access, allowing them to write scripts, move files, alter permissions, and modify system configurations. However, an agent may achieve a user's goal while causing unintended harm, such as deleting unrelated files, weakening access controls, or...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.03575v1",
+      "pdf": "https://arxiv.org/pdf/2611.03575v1",
+      "source": "arXiv",
+      "published": "2026-11-02"
+    },
+    {
+      "rank": 3,
+      "title": "MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study",
+      "score": 10,
+      "summary": "The Model Context Protocol (MCP) lets agentic AI frameworks connect language models to external tool providers, but it carries attacker-controlled content (tool descriptions, schema fields, and response data) into model context without validation. Prior benchmarks measure model compliance with poisoned instructions...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.03555v1",
+      "pdf": "https://arxiv.org/pdf/2611.03555v1",
+      "source": "arXiv",
+      "published": "2026-11-02"
+    },
+    {
+      "rank": 4,
+      "title": "Can LLM Agents Improve Imperfect Earth System Model Parameterizations?",
+      "score": 10,
+      "summary": "Earth system models (ESMs) rely on parameterizations to represent unresolved processes such as convection, cloud microphysics, and turbulence. However, translating advances in physical understanding into stable, validated parameterizations and integrating them into ESMs often takes years. Agentic AI could accelerate...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.03543v1",
+      "pdf": "https://arxiv.org/pdf/2611.03543v1",
+      "source": "arXiv",
+      "published": "2026-11-02"
+    },
+    {
+      "rank": 5,
+      "title": "An Agentic Framework for Automated Power System Studies and Grid Connection Assessment",
+      "score": 10,
+      "summary": "Connecting new generation and demand to the grid depends on two scarce skills: checking applications against a large, changing body of regulation, and running the network studies that decide where and how a project connects. We present Grid Agents, an AI system that brings both together, and the methodology we use to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.03534v1",
+      "pdf": "https://arxiv.org/pdf/2611.03534v1",
+      "source": "arXiv",
+      "published": "2026-11-02"
+    }
+  ]
+}
