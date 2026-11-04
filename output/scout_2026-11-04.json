@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-04",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "score": 10,
+      "summary": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.05345v1",
+      "pdf": "https://arxiv.org/pdf/2611.05345v1",
+      "source": "arXiv",
+      "published": "2026-11-03"
+    },
+    {
+      "rank": 2,
+      "title": "HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation",
+      "score": 10,
+      "summary": "In LLM-based recommendation, memory acts as a user-level agent in a memory-augmented backbone. Yet users and items remain asymmetric: only the user is given a structured profile; it enters a bandwidth-limited reranker prompt; and it is frozen after warmup. We recast LLM-based recommendation as an agentic-communication...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.05319v1",
+      "pdf": "https://arxiv.org/pdf/2611.05319v1",
+      "source": "arXiv",
+      "published": "2026-11-03"
+    },
+    {
+      "rank": 3,
+      "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
+      "score": 10,
+      "summary": "Skill memories encode past experiences as textual prompts to improve reinforcement learning (RL) for self-evolving agents. Complementing RL, On-Policy Self-Distillation (OPSD) provides dense, fine-grained supervision to internalize knowledge from skill-guided trajectories and accelerate policy learning. However,...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.05313v1",
+      "pdf": "https://arxiv.org/pdf/2611.05313v1",
+      "source": "arXiv",
+      "published": "2026-11-03"
+    },
+    {
+      "rank": 4,
+      "title": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
+      "score": 10,
+      "summary": "Multimodal web agents have shown promising capabilities for interacting with websites through graphical user interfaces (GUIs), yet realistic web tasks often require long-horizon, multi-step planning that remains challenging for monolithic policies. Such agents must jointly infer high-level plans, navigate through...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.05263v1",
+      "pdf": "https://arxiv.org/pdf/2611.05263v1",
+      "source": "arXiv",
+      "published": "2026-11-03"
+    },
+    {
+      "rank": 5,
+      "title": "Is Forgetting Unified? Exploring Concept Unlearning in Unified Multimodal Models",
+      "score": 10,
+      "summary": "Long-horizon embodied tasks require agents to learn, reason, and generalize robustly across complex real-world environments. However, existing approaches often struggle with partial observability, fragmented spatial reasoning, and inefficient integration of heterogeneous memories, limiting their capacity for...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2611.04467",
+      "pdf": "https://arxiv.org/pdf/2611.04467",
+      "source": "HuggingFace Daily",
+      "published": "2026-11-04"
+    }
+  ]
+}
