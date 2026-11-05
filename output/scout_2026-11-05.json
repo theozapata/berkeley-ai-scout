@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-05",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+      "score": 10,
+      "summary": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.06914v1",
+      "pdf": "https://arxiv.org/pdf/2611.06914v1",
+      "source": "arXiv",
+      "published": "2026-11-04"
+    },
+    {
+      "rank": 2,
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "score": 10,
+      "summary": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.06868v1",
+      "pdf": "https://arxiv.org/pdf/2611.06868v1",
+      "source": "arXiv",
+      "published": "2026-11-04"
+    },
+    {
+      "rank": 3,
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "score": 10,
+      "summary": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.06858v1",
+      "pdf": "https://arxiv.org/pdf/2611.06858v1",
+      "source": "arXiv",
+      "published": "2026-11-04"
+    },
+    {
+      "rank": 4,
+      "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+      "score": 10,
+      "summary": "Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.06841v1",
+      "pdf": "https://arxiv.org/pdf/2611.06841v1",
+      "source": "arXiv",
+      "published": "2026-11-04"
+    },
+    {
+      "rank": 5,
+      "title": "Task-Efficient Agent Evaluation Using Cached Traces",
+      "score": 10,
+      "summary": "Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each execution that can...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.06803v1",
+      "pdf": "https://arxiv.org/pdf/2611.06803v1",
+      "source": "arXiv",
+      "published": "2026-11-04"
+    }
+  ]
+}
