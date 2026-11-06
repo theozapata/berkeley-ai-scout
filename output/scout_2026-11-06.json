@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-06",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "score": 10,
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.08428v1",
+      "pdf": "https://arxiv.org/pdf/2611.08428v1",
+      "source": "arXiv",
+      "published": "2026-11-05"
+    },
+    {
+      "rank": 2,
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "score": 8,
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.08483v1",
+      "pdf": "https://arxiv.org/pdf/2611.08483v1",
+      "source": "arXiv",
+      "published": "2026-11-05"
+    },
+    {
+      "rank": 3,
+      "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+      "score": 8,
+      "summary": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.08433v1",
+      "pdf": "https://arxiv.org/pdf/2611.08433v1",
+      "source": "arXiv",
+      "published": "2026-11-05"
+    },
+    {
+      "rank": 4,
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "score": 8,
+      "summary": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale. As models improve, they can discover valid solutions that existing verifiers reject, while changes to...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.08417v1",
+      "pdf": "https://arxiv.org/pdf/2611.08417v1",
+      "source": "arXiv",
+      "published": "2026-11-05"
+    },
+    {
+      "rank": 5,
+      "title": "SCALE: Real-Time Latent Communication for Cyber-Physical Agents",
+      "score": 8,
+      "summary": "Latent communication enables agents to collaborate efficiently by directly exchanging intermediate model representations rather than raw sensor data or text messages. Existing approaches, however, are primarily designed for LLM agents and do not consider the bandwidth constraints and heterogeneous task deadlines faced...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.08390v1",
+      "pdf": "https://arxiv.org/pdf/2611.08390v1",
+      "source": "arXiv",
+      "published": "2026-11-05"
+    }
+  ]
+}
