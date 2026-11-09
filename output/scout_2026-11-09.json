@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-09",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+      "score": 10,
+      "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.09891v1",
+      "pdf": "https://arxiv.org/pdf/2611.09891v1",
+      "source": "arXiv",
+      "published": "2026-11-06"
+    },
+    {
+      "rank": 2,
+      "title": "Can Agentic Systems Close the Gap in Radiology with Production AI Tools?",
+      "score": 10,
+      "summary": "Radiology AI has developed along two paths: specialized models that perform well on narrow tasks but cover few clinical findings, and generalist models that address a broader range of tasks but remain prone to hallucination and inaccurate measurements. Combining the two through agentic systems offers a route towards...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.09836v1",
+      "pdf": "https://arxiv.org/pdf/2611.09836v1",
+      "source": "arXiv",
+      "published": "2026-11-06"
+    },
+    {
+      "rank": 3,
+      "title": "Knowing When to Intervene: Causal Evaluation of AI Agents",
+      "score": 10,
+      "summary": "Current evaluations of agentic AI systems primarily rely on benchmarks. However, the static nature of benchmarks makes them uninformative about the value of auditing interventions at deployment time. For reliable deployment, we often need to determine within an agent's trajectory whether or not to intervene, e.g., by...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.09792v1",
+      "pdf": "https://arxiv.org/pdf/2611.09792v1",
+      "source": "arXiv",
+      "published": "2026-11-06"
+    },
+    {
+      "rank": 4,
+      "title": "On Agentic Manipulation Policies",
+      "score": 9,
+      "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.09892v1",
+      "pdf": "https://arxiv.org/pdf/2611.09892v1",
+      "source": "arXiv",
+      "published": "2026-11-06"
+    },
+    {
+      "rank": 5,
+      "title": "GRAC: Graph-Based Retrieval-Augmented Captioning for Surgical Scene Description",
+      "score": 8,
+      "summary": "Purpose: Surgical operative reports support procedural documentation, surgical training, performance assessment, and workflow review. However, extracting meaningful information often requires extensive manual review and clinical expertise. Automated surgical scene descriptions could reduce this burden by leveraging...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.09866v1",
+      "pdf": "https://arxiv.org/pdf/2611.09866v1",
+      "source": "arXiv",
+      "published": "2026-11-06"
+    }
+  ]
+}
