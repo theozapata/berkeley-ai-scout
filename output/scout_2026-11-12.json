@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-12",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+      "score": 10,
+      "summary": "Formal world models can support planning, verification, and safety reasoning, but constructing them from open-ended natural-language situations is difficult, particularly in multi-agent settings where several formalizations may be plausible. We study whether five LLMs can generate such world models as partially...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.14419v1",
+      "pdf": "https://arxiv.org/pdf/2611.14419v1",
+      "source": "arXiv",
+      "published": "2026-11-10"
+    },
+    {
+      "rank": 2,
+      "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+      "score": 9,
+      "summary": "Business process automation runs the same Standard Operating Procedure (SOP) again and again on new inputs. Large Language Model (LLM) agents can follow an SOP written in natural language, but they call an LLM to choose every step of every run, which adds latency and cost at scale. We present ReTrace, which turns an...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.14492v1",
+      "pdf": "https://arxiv.org/pdf/2611.14492v1",
+      "source": "arXiv",
+      "published": "2026-11-10"
+    },
+    {
+      "rank": 3,
+      "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+      "score": 8,
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.14515v1",
+      "pdf": "https://arxiv.org/pdf/2611.14515v1",
+      "source": "arXiv",
+      "published": "2026-11-10"
+    },
+    {
+      "rank": 4,
+      "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
+      "score": 8,
+      "summary": "LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.14514v1",
+      "pdf": "https://arxiv.org/pdf/2611.14514v1",
+      "source": "arXiv",
+      "published": "2026-11-10"
+    },
+    {
+      "rank": 5,
+      "title": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "score": 8,
+      "summary": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.14511v1",
+      "pdf": "https://arxiv.org/pdf/2611.14511v1",
+      "source": "arXiv",
+      "published": "2026-11-10"
+    }
+  ]
+}
