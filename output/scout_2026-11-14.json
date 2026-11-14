@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-14",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+      "score": 9,
+      "summary": "Applying machine learning systems to new domains introduces bottlenecks in both labeled data acquisition and manual pipeline engineering. While recent MLE agents show promise in automating pipeline design, they have been studied almost exclusively in fully supervised settings, leaving them untested in realistic...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.17323v1",
+      "pdf": "https://arxiv.org/pdf/2611.17323v1",
+      "source": "arXiv",
+      "published": "2026-11-12"
+    },
+    {
+      "rank": 2,
+      "title": "Learning When Diffusion Language Models Should Regenerate",
+      "score": 8,
+      "summary": "Remasking allows diffusion language models to revisit generated text, but effective correction requires knowing when and what to revise. Our diagnosis on Sudoku reveals two gaps. Hidden states contain error information that token confidence does not reliably expose, and remasking an isolated error usually reproduces...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.17320v1",
+      "pdf": "https://arxiv.org/pdf/2611.17320v1",
+      "source": "arXiv",
+      "published": "2026-11-12"
+    },
+    {
+      "rank": 3,
+      "title": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "score": 8,
+      "summary": "Coding agents tackle successive tasks on an evolving repository, carrying forward edits and writing memory before the next task is known. Selecting memory for unknown next tasks requires balancing future usefulness against the costs of writing and reading it. The actor must also decide when acting on available memory...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.17316v1",
+      "pdf": "https://arxiv.org/pdf/2611.17316v1",
+      "source": "arXiv",
+      "published": "2026-11-12"
+    },
+    {
+      "rank": 4,
+      "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+      "score": 8,
+      "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states,...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.17267v1",
+      "pdf": "https://arxiv.org/pdf/2611.17267v1",
+      "source": "arXiv",
+      "published": "2026-11-12"
+    },
+    {
+      "rank": 5,
+      "title": "Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery",
+      "score": 8,
+      "summary": "Modern automated heuristic discovery (AHD) systems increasingly rival hand-crafted heuristics by leveraging Large Language Models (LLMs) to iteratively mutate and refine solutions. A natural assumption is that more powerful and more expensive models consistently yield better heuristics. We challenge this empirically:...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.17241v1",
+      "pdf": "https://arxiv.org/pdf/2611.17241v1",
+      "source": "arXiv",
+      "published": "2026-11-12"
+    }
+  ]
+}
