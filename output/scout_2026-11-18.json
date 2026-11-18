@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "score": 10,
+      "summary": "Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN),...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.23228v1",
+      "pdf": "https://arxiv.org/pdf/2611.23228v1",
+      "source": "arXiv",
+      "published": "2026-11-17"
+    },
+    {
+      "rank": 2,
+      "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "score": 10,
+      "summary": "LLM agents increasingly drive their own learning. Self-improvement methods delegate various components of model optimization to the models themselves. As models become more capable, this motivates a basic question: do these increasingly capable models still need us to specify how they should self-improve? In this...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.23219v1",
+      "pdf": "https://arxiv.org/pdf/2611.23219v1",
+      "source": "arXiv",
+      "published": "2026-11-17"
+    },
+    {
+      "rank": 3,
+      "title": "RSI-Prime: Training Models to Train Models",
+      "score": 10,
+      "summary": "Enabling large language models (LLMs) to autonomously conduct training and improve target models is an important foundation for recursive self-improvement (RSI). As LLMs expand their role from being trained to conducting training, their model-training capability warrants dedicated study and systematic development. To...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.23138v1",
+      "pdf": "https://arxiv.org/pdf/2611.23138v1",
+      "source": "arXiv",
+      "published": "2026-11-17"
+    },
+    {
+      "rank": 4,
+      "title": "Dynamic Task Allocation with Dialogue",
+      "score": 10,
+      "summary": "Effective multi-agent collaboration requires agents to adapt task allocation as goals and responsibilities evolve. Prior task-allocation frameworks often assume static goals, full observability, or rely on large language models (LLMs) without explicit, verifiable beliefs about task allocation or intent. These...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.23119v1",
+      "pdf": "https://arxiv.org/pdf/2611.23119v1",
+      "source": "arXiv",
+      "published": "2026-11-17"
+    },
+    {
+      "rank": 5,
+      "title": "Regularized Score Centering",
+      "score": 10,
+      "summary": "Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update, even without full...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2611.21791",
+      "pdf": "https://arxiv.org/pdf/2611.21791",
+      "source": "HuggingFace Daily",
+      "published": "2026-11-18"
+    }
+  ]
+}
