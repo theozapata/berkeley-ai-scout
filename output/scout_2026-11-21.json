@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-21",
+  "top_papers": [
+    {
+      "rank": 1,
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "score": 10,
+      "summary": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.26553v1",
+      "pdf": "https://arxiv.org/pdf/2611.26553v1",
+      "source": "arXiv",
+      "published": "2026-11-19"
+    },
+    {
+      "rank": 2,
+      "title": "Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models",
+      "score": 10,
+      "summary": "Large Web platforms operate large fleets of ranking models, each selecting features from a shared pool of tens of thousands. We present an end-to-end agentic system that optimizes features across the fleet under resource constraints shared across models and those set per model, such as feature pipeline cost and...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.26531v1",
+      "pdf": "https://arxiv.org/pdf/2611.26531v1",
+      "source": "arXiv",
+      "published": "2026-11-19"
+    },
+    {
+      "rank": 3,
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "score": 10,
+      "summary": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "pdf": "https://arxiv.org/pdf/2611.26595",
+      "source": "HuggingFace Daily",
+      "published": "2026-11-21"
+    },
+    {
+      "rank": 4,
+      "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+      "score": 9,
+      "summary": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "http://arxiv.org/abs/2611.26624v1",
+      "pdf": "https://arxiv.org/pdf/2611.26624v1",
+      "source": "arXiv",
+      "published": "2026-11-19"
+    },
+    {
+      "rank": 5,
+      "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+      "score": 9,
+      "summary": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for combining detailed narration with precise...",
+      "takeaway": "High priority \u2013 strongly related to agents / multi-agent systems. Read the abstract and decide if you want to deep-dive or save for a project idea.",
+      "url": "https://arxiv.org/abs/2611.26380",
+      "pdf": "https://arxiv.org/pdf/2611.26380",
+      "source": "HuggingFace Daily",
+      "published": "2026-11-21"
+    }
+  ]
+}
